@@ -56,4 +56,36 @@ int comparaString(char* string1, char* string2){
 	}
 }
 
+//strcat()
+/*
+Esta função irá concatenar a segunda string ao final da primeira string.
+
+O primeiro parâmetro da função portanto deve ser uma variável e possuir
+o espaço suficiente para o resultado. A função não irá testar se existe
+espaço fazendo a movimentação de caracteres do segundo parâmetro para o
+final do primeiro. O segundo parâmetro pode ser uma variável ou uma
+constante delimitada por aspas.
+*/
+char* concatenaString(char* string1, char* string2){
+    int i, j;
+    for(i = 0; string1[i] != '\0'; ++i);
+    for(j = 0; string2[i] != '\0'; ++j, ++i){
+        string1[i] = string2[j];
+    }
+
+    string1[i] = '\0';
+    return string1;
+}
+
+//strlen()
+/*
+Esta função irá retornar a quantidade de caracteres existentes em uma string,
+não considerando o caractere NULL na contagem dos caracteres.
+*/
+int retornaString(char *stringteste){
+    int i,tamanho;
+    for(i=0,tamanho=0; stringteste[i] != '\0' ; i++,tamanho++);
+    return tamanho;
+}
+
 #endif /* MINHASTRING_H */
