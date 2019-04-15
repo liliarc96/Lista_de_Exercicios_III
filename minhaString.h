@@ -14,7 +14,7 @@
 void copiaString(char* destino, char* original){
 	int i; // Índice contador
 
-	for(i = 0; i < sizeof(destino); i++){
+	for(i = 0; i <= sizeof(destino); i++){
 		destino[i]= original[i]; // Destino recebe o que está no índice de Original
 	}
 }
