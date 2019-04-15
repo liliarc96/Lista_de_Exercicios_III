@@ -11,6 +11,9 @@
 */
 
 //strcpy()
+/*
+O conteúdo da segunda variável ou constante informada será copiado para a área indicada no primeiro parâmetro.
+*/
 void copiaString(char* destino, char* original){
 	int i; // Índice contador
     	printf("A string original eh %s\n", original);
@@ -21,6 +24,16 @@ void copiaString(char* destino, char* original){
 }
 
 //strcmp()
+/*
+
+Essa função irá fazer a comparação, caractere a caractere, dos dois parâmetros informados. 
+Como resultado da comparação serão obtidos os seguintes valores:
+
+(*) -1 indicando que o parâmetro 1 é menor que o parâmetro 2;
+(*) 0 indicando que os parâmetros são iguais;
+(*) 1 caso o primeiro seja maior que o segundo parâmetro.
+
+*/
 int comparaString(char* string1, char* string2){
 	int i; // Índice contador
 	int maiorprimeira = 0;
