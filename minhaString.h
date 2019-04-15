@@ -13,7 +13,8 @@
 //strcpy()
 void copiaString(char* destino, char* original){
 	int i; // Índice contador
-
+    	printf("A string original eh %s\n", original);
+    	printf("A string destino eh %s\n", destino);
 	for(i = 0; i <= sizeof(destino); i++){
 		destino[i]= original[i]; // Destino recebe o que está no índice de Original
 	}
