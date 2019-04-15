@@ -16,15 +16,7 @@ int main()
 
    printf("%s\n", name );
    printf("%s\n", surname );
-   
-   /* Saída:
-      Hello
-      World
-      A string original eh Hello
-      A string destino eh World
-      Hello
-      Hello*/
-   
+
    printf("-----------Fim do teste 1-----------\n\n\n\n");
    printf("-----------Inicio do teste 2-----------\n");
    int teste2;
