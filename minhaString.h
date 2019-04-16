@@ -18,7 +18,7 @@ void copiaString(char* destino, char* original){
 	int i; // Índice contador
     	printf("A string original eh %s\n", original);
     	printf("A string destino eh %s\n", destino);
-	for(i = 0; i <= destino[i] != '\0'; i++){
+	for(i = 0; destino[i] != '\0'; i++){
 		destino[i]= original[i]; // Destino recebe o que está no índice de Original
 	}
 }
@@ -39,7 +39,7 @@ int comparaString(char* string1, char* string2){
 	int maiorprimeira = 0;
 	int maiorsegunda = 0;
 
-	for(i = 0;i < string1[i] != '\0'; i++){
+	for(i = 0; string1[i] != '\0'; i++){
 		if(string1[i] > string2[i]){
 			maiorprimeira++;
 		}else if(string1[i] < string2[i]){
